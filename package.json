@@ -25,7 +25,8 @@
     "react-hook-form": "^7.4.0",
     "react-hot-toast": "^1.0.2",
     "react-responsive-carousel": "^3.2.18",
-    "react-slick": "^0.28.1"
+    "react-slick": "^0.28.1",
+    "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.3",

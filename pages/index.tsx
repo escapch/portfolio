@@ -1,15 +1,16 @@
-import styles from "@styles/Home.module.css";
-import { motion } from "framer-motion";
+import styles from '@styles/Home.module.css';
+import { motion } from 'framer-motion';
 import {
   slideUp,
   slideToRight,
   slideToLeft,
   slideDown,
   fadeIn,
-} from "@helpers/animation";
-import Link from "next/link";
-import MetaTags from "@components/MetaTags";
-import Shape from "@components/Shape";
+} from '@helpers/animation';
+import Link from 'next/link';
+import MetaTags from '@components/MetaTags';
+import Shape from '@components/Shape';
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
   return (
@@ -50,8 +51,32 @@ const Home = () => {
                 custom={0.3}
                 className="md:text-2xl text-lg dark:text-gray-300 text-gray-700   font-lora  capitalize"
               >
-                Front-end <br />
-                react js developer <br /> based in Kyrgyzstan.
+                <Typewriter
+                  options={{
+                    strings: ['Front-end'],
+                    autoStart: true,
+                    loop: true,
+                    delay: 75,
+                  }}
+                />
+                <br />
+                <Typewriter
+                  options={{
+                    strings: ['react js developer'],
+                    autoStart: true,
+                    loop: true,
+                    delay: 75,
+                  }}
+                />
+                <br />
+                <Typewriter
+                  options={{
+                    strings: ['based in Kyrgyzstan.'],
+                    autoStart: true,
+                    loop: true,
+                    delay: 75,
+                  }}
+                />
               </motion.p>
             </div>
             <Link href="/work">
