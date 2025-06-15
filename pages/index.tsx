@@ -1,16 +1,16 @@
-import styles from '@styles/Home.module.css';
-import { motion } from 'framer-motion';
+import styles from "@styles/Home.module.css";
+import { motion } from "framer-motion";
 import {
   slideUp,
   slideToRight,
   slideToLeft,
   slideDown,
   fadeIn,
-} from '@helpers/animation';
-import Link from 'next/link';
-import MetaTags from '@components/MetaTags';
-import Shape from '@components/Shape';
-import Typewriter from 'typewriter-effect';
+} from "@helpers/animation";
+import Link from "next/link";
+import MetaTags from "@components/MetaTags";
+import Shape from "@components/Shape";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
@@ -37,7 +37,7 @@ const Home = () => {
             >
               Front-End <br /> developer
             </motion.h1>
-            <div className="md:space-x-16 justify-center items-center md:flex">
+            <div className="md:space-x-16 justify-start items-center md:flex">
               <motion.div
                 initial="hidden"
                 animate="visible"
@@ -49,29 +49,22 @@ const Home = () => {
                 animate="visible"
                 variants={slideToRight}
                 custom={0.3}
-                className="md:text-2xl text-lg dark:text-gray-300 text-gray-700   font-lora  capitalize"
+                className="md:text-2xl text-lg dark:text-gray-300 text-gray-700 font-lora  capitalize"
               >
-                <Typewriter
-                  options={{
-                    strings: ['Front-end'],
-                    autoStart: true,
-                    loop: true,
-                    delay: 75,
-                  }}
-                />
+                Front-end
+                <br />
+                react js developer
                 <br />
                 <Typewriter
                   options={{
-                    strings: ['react js developer'],
-                    autoStart: true,
-                    loop: true,
-                    delay: 75,
-                  }}
-                />
-                <br />
-                <Typewriter
-                  options={{
-                    strings: ['based in Kyrgyzstan.'],
+                    strings: [
+                      "Crafting Interfaces",
+                      "Writing Clean Code",
+                      "Bringing Ideas to Life",
+                      "Pixel-Perfect Designs",
+                      "Building with Passion",
+                      "Reacting with React",
+                    ],
                     autoStart: true,
                     loop: true,
                     delay: 75,
