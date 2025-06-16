@@ -1,5 +1,8 @@
 # 👋 Hey there! Welcome to my portfolio
 
+# link to portfolio
+https://beks-portfolio.vercel.app/
+
 ## Tools
 
 Nextjs , Framer-motion, Tailwindcss
